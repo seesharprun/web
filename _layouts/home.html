@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<main class="cover text-center h-100 text-light">
+  <div class="container mx-5 px-5 py-3 d-flex w-100 h-100 mx-auto flex-column">
+    <header class="mb-auto">
+      <h3 class="mb-0">
+        <i class="seesharprun ssr-logo mr-2"></i>
+        {{ site.title }} 
+      </h3>
+    </header>
+    <main role="main" class="inner py-2">
+      <img class="img-fluid pb-3" src="assets/img/logo-white.png" alt="{{ site.title }}" />
+      <article class="lead">
+        {{ content }}
+      </article>
+      <p class="mt-5">
+        <a href="about" class="btn btn-lg btn-light">Learn more</a>
+      </p>
+    </main>
+    <footer class="text-muted mt-auto">
+      <p>
+        &copy; 2019 - SeeSharpRun.NET
+      </p>
+    </footer>
+  </div>
+</main>

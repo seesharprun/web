@@ -1,9 +1,0 @@
-steps:
-- task: AzureRmWebAppDeployment@4
-  displayName: 'Azure App Service Deploy: seesharprun'
-  inputs:
-    azureSubscription: 'Action Pack'
-    appType: webAppLinux
-    WebAppName: seesharprun
-    packageForLinux: '$(System.DefaultWorkingDirectory)/build/site'
-    RuntimeStack: 'PHP|7.2'

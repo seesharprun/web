@@ -1,6 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+
+Cras eu ultricies lacus, tristique scelerisque tellus. Vivamus efficitur malesuada lacus quis eleifend. Vivamus tincidunt nunc sed enim sagittis, vel commodo velit dictum. Integer faucibus ut urna eget finibus. Suspendisse auctor eget neque a elementum.

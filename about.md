@@ -1,18 +1,9 @@
 ---
+title: "About Us"
 layout: page
-title: About
-permalink: /about/
+jumbotron: "/assets/img/jumbotron-about.jpg"
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Nam sapien nisl, ullamcorper nec porta nec, viverra sed elit. Etiam accumsan finibus velit nec imperdiet. Sed ac arcu vel eros pellentesque dapibus at nec orci. Nulla nec felis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In turpis nisl, egestas nec orci a, aliquam pretium diam. Duis sit amet felis odio. Vivamus ut risus urna. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Fusce convallis eros eu interdum congue. Morbi ullamcorper tempor hendrerit. Integer bibendum arcu ac porta porta. Phasellus semper, risus vel semper bibendum, massa est pulvinar velit, in elementum felis mauris et lacus. Ut varius mi eu diam pretium, mollis vulputate massa sodales.

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main>
+    <section class="jumbotron jumbotron-fluid bg-cover" style="background: url(/assets/img/jumbotron-blog.jpg) no-repeat center center; background-size: cover;">
+        <div class="container">
+            <h3 class="display-3 text-light text-center">
+                {{ page.title }}
+            </h3>
+        </div>
+    </section>
+    <section class="py-3 container">
+        {{ content }}
+    </section>
+</main>
+
+{% include footer.html %}

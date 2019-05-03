@@ -1,0 +1,34 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="card-deck">
+    {% assign featuredPosts = site.posts | where: "featured", "true" %}
+    {% for post in featuredPosts %}
+        <div class="card">
+            {% if post.categories.size > 0 %}
+            <div class="card-header p-0">
+                <ul class="list-group list-group-horizontal-sm">
+                    {% for category in post.categories %}
+                        <li class="list-group-item border-0 bg-transparent text-uppercase">
+                            {{ category }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            <div class="card-body">                
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">
+                    {{ post.excerpt }}
+                </p>
+            </div>
+            <div class="card-footer text-muted">
+                <a href="{{ post.url }}">Go to post</a>
+            </div>
+        </div>            
+    </li>
+    {% endfor %}
+</div>
