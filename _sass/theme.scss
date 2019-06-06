@@ -1,5 +1,6 @@
 @import "fonts";
 @import "colors";
+@import "text";
 
 .cover {
     background-color: #343a40 !important;
@@ -7,4 +8,22 @@
     background-size: cover;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.jumbotron-page {
+    background-color: rgba(black, 0.65);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+}
+
+.filter-h1 h1 {
+    display: none;
+}
+
+.post-icon {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
 }

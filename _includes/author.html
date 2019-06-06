@@ -1,0 +1,28 @@
+{% assign author = site.authors | where: 'slug', page.author | first %}
+{% if author %}
+    <div>
+        <a href="{{ author.url }}" class="text-reset d-flex justify-content-start align-items-center">
+            {% if author.icon %}
+                <img src="{{ author.icon }}" alt="{{ author.title }}" class="rounded-circle mr-2" style="width: 25px; height: 25px;" />
+            {% endif %}
+            {{ author.title }}
+        </a>
+    </div>
+    <div class="text-one-and-a-quarter-size">
+        {% if author.twitter %}
+            <a href="https://twitter.com/{{ author.twitter }}" class="text-reset mx-1 text-decoration-none" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        {% endif %}
+        {% if author.linkedIn %}
+            <a href="https://linkedin.com/in/{{ author.linkedIn }}" class="text-reset mx-1 text-decoration-none" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        {% endif %}
+        {% if author.gitHub %}
+            <a href="https://github.com/{{ author.gitHub }}" class="text-reset mx-1 text-decoration-none" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        {% endif %}
+    </div>
+{% endif %}

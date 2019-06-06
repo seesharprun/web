@@ -1,5 +1,21 @@
-<nav class="navbar fixed-bottom navbar-dark bg-dark">
-    <span class="navbar-text text-seesharprun-green">
-        &copy; 2019 - SeeSharpRun.NET
-    </span>
-</nav>
+<footer class="navbar fixed-bottom navbar-dark bg-seesharprun-blue d-flex justify-content-around">
+    <small>
+        <a href="sitemap.xml" class="navbar-text">
+            Sitemap
+        </a>
+    </small>
+    <small>
+        <span class="navbar-text">
+            &copy; {{ site.time | date: '%Y' }}
+            -
+            <a href="mailto:{{ site.email | encode_email }}">
+                SeeSharpRun.NET
+            </a>
+        </span>
+    </small>
+    <small>
+        <a href="feed.xml" class="navbar-text">
+            Feed
+        </a>
+    </small>
+</footer>

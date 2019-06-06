@@ -1,9 +1,13 @@
 ---
 title: "About Us"
-layout: page
 jumbotron: "/assets/img/jumbotron-about.jpg"
 ---
 
-Nam sapien nisl, ullamcorper nec porta nec, viverra sed elit. Etiam accumsan finibus velit nec imperdiet. Sed ac arcu vel eros pellentesque dapibus at nec orci. Nulla nec felis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In turpis nisl, egestas nec orci a, aliquam pretium diam. Duis sit amet felis odio. Vivamus ut risus urna. 
+{: .lead .text-one-and-a-half-size}
+We are a small, minority-owned business started by individuals who have seen great recognition and success through other consulting and training ventures. Because of our size, we can deliver first-class solutions without the traditional overhead and delays that are associated with other consulting entities. We maintain a small list of active clients so that we can provide unparalleled time and attention to each of your concerns.
 
-Fusce convallis eros eu interdum congue. Morbi ullamcorper tempor hendrerit. Integer bibendum arcu ac porta porta. Phasellus semper, risus vel semper bibendum, massa est pulvinar velit, in elementum felis mauris et lacus. Ut varius mi eu diam pretium, mollis vulputate massa sodales.
+
+{: .display-4 .pt-5}
+#### Our Leadership
+
+{% include consultants.html %}

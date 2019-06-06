@@ -1,19 +1,60 @@
 title: SeeSharpRun.NET
 email: info@seesharprun.net
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  SeeSharpRun.NET is a forward-thinking cloud consultancy specializing in delivering application solutions and training from proven experts. Our business is headquartered in Virginia with easy access to clients in the Mid-Atlantic region.
 baseurl: ""
 url: "https://seesharprun.net"
 twitter_username: sidney_andrews
 github_username:  seesharprun
-markdown: kramdown
-kramdown:
-   syntax_highlighter_opts:
-      disable : true
+pagination: 
+  enabled: true
+  per_page: 7
+  permalink: /page/:num/
+  sort_field: 'date'
+  sort_reverse: true
 sass:
   style: :compressed
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-youtube
+  - jekyll-timeago
+  - jekyll-email-protect
+  - jekyll-readme-index
+  - jekyll-default-layout
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
 exclude:
   - Gemfile
   - Gemfile.lock
+collections:
+  authors:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: authors
+    values:
+      permalink: /blog/authors/:slug
+      layout: author
+      featured: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:year/:month/:day/:slug
+      layout: post
+      featured: false
+      author: sidney_andrews
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: "readme.md"
+    values:
+      layout: home

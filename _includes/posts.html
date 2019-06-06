@@ -1,0 +1,25 @@
+<ul class="list-unstyled pt-4">    
+    {% for post in paginator.posts %}
+        <li class="rounded d-flex my-5">
+            {% assign jumbotron = post.jumbotron | default: '/content/img/jumbotron-default.jpg' %}
+            <a href="{{ post.url }}" class="text-reset">
+                <img src="{{ jumbotron }}" class="mr-3 post-icon" />
+            </a>
+            <div class="d-flex flex-column">
+                <h5 class="mt-0">
+                    <a href="{{ post.url }}" class="text-reset">{{ post.title }}</a>
+                </h5>
+                {{ post.excerpt }}
+                <div class="d-flex flex-row justify-content-between align-items-center align-self-stretch">
+                    <small>
+                        {{ post.date | timeago }}
+                    </small>
+                    <a href="{{ post.url }}" class="text-uppercase text-three-quarters-size">
+                        Read Post 
+                        <i class="fas fa-angle-right ml-2"></i>               
+                    </a>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+</ul>

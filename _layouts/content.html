@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% include navigation.html %}
+{% assign jumbotron = page.jumbotron | default: '/content/img/jumbotron-default.jpg' %}
+<header class="jumbotron jumbotron-fluid jumbotron-page bg-cover mb-0" style="background-image: url({{ jumbotron }});">
+    <div class="container">
+        <h2 class="display-2 text-light text-center">
+            {{ page.title }}
+        </h2>
+    </div>
+</header>
+<main class="pb-5 mb-5 container">
+    {{ content }}
+</main>
+{% include footer.html %}

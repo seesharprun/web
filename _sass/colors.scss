@@ -16,3 +16,41 @@ $seesharprun-green: #A8CC70;
 .text-seesharprun-green {
     color: $seesharprun-green !important;
 }
+
+.btn-seesharprun-blue {
+    color: #f8f9fa;
+    background-color: $seesharprun-blue;
+    border-color: darken($seesharprun-blue, 10%);
+}
+
+.btn-seesharprun-green {
+    color: #212529;
+    background-color: $seesharprun-green;
+    border-color: darken($seesharprun-green, 10%);
+}
+
+.alert-seesharprun-blue {
+    color: #1b1e21;
+    background-color: lighten($seesharprun-blue, 35%);
+    border-color: lighten($seesharprun-blue, 15%);
+}
+
+.alert-seesharprun-blue a, .alert-seesharprun-green a {
+    color: inherit;
+    font-weight: 500;
+}
+
+.alert-seesharprun-green {
+    color: #1b1e21;
+    background-color: lighten($seesharprun-green, 15%);
+    border-color: $seesharprun-green;
+}
+
+.text-logo-gradient {
+    background: radial-gradient(ellipse at top right, $seesharprun-blue 0%, $seesharprun-blue 53%, $seesharprun-green 53%, $seesharprun-green 100%);    color: rgba(255, 0, 0, 0);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}

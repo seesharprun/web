@@ -1,20 +1,25 @@
 ---
-layout: default
+layout: content
 ---
-
-{% include header.html %}
-
-<main>
-    <section class="jumbotron jumbotron-fluid bg-cover" style="background: url(/assets/img/jumbotron-blog.jpg) no-repeat center center; background-size: cover;">
-        <div class="container">
-            <h3 class="display-3 text-light text-center">
-                {{ page.title }}
-            </h3>
+<section class="pt-3 mb-5 bg-seesharprun-green d-flex flex-column text-dark rounded-bottom">
+    <div class="d-flex justify-content-around align-items-center">
+        {% include author.html %}
+        <div>
+            {{ page.date | date: '%B %d, %Y' }}
         </div>
-    </section>
-    <section class="py-3 container">
-        {{ content }}
-    </section>
-</main>
-
-{% include footer.html %}
+    </div>
+    {% if page.tags.size > 0 %}
+        <ul class="nav pb-2 align-self-center">
+            {% for tag in page.tags %}
+                <li class="nav-item">
+                    <span class="nav-link">
+                        {{ tag }}
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</section>
+<article>
+    {{ content }}
+</article>
