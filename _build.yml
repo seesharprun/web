@@ -15,6 +15,11 @@ steps:
 - script: |
     bundle exec jekyll build -d $(Build.ArtifactStagingDirectory)
   displayName: 'Execute Bundle'  
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: .azure
+    targetFolder: $(Build.ArtifactStagingDirectory)
+  displayName: 'Copy Azure Configuration File'
 - task: PublishBuildArtifacts@1
   displayName: 'Publish site artifacts'
   inputs:
